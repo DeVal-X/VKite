@@ -1,0 +1,21 @@
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-description{
+  border-radius: 7px;
+  background-color: white;
+  width: 50vw;
+  max-width: 800px;
+  height: 400px;
+}
+
+.about-dev{
+  border-radius: 7px;
+  background-color: white;
+  width: 25vw;
+  max-width: 300px;
+  padding: 10px;
+  height: 400px;
+}

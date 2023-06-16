@@ -1,7 +1,4 @@
 body{
-  background-image: url("beachy.jpg");
+  background-image: linear-gradient(rgba(37,81,131,0.65),rgba(37,81,131,0.65)), url("beachy.jpg");
   background-attachment: fixed;
 }
- .content {
-  background-color: rgba(37, 81, 131, 0.65);
- }

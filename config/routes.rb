@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/safety", to: "pages#safety"
   get "/spots", to: "pages#spots"
   get "/learning", to: "pages#learning"
+  get "/about", to: "pages#about"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
