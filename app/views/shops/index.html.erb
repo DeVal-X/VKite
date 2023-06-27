@@ -1,0 +1,28 @@
+
+<div class="hero">
+  <div class="banner">
+    <h1>Gear</h1>
+  </div>
+
+  <%= render "shared/map" %>
+
+  <div class="section section-between">
+    <div class="card-box">
+      <% @shops.each do |shop| %>
+        <div class="home-card">
+          <img
+            src="https://source.unsplash.com/random?/kitesurf"
+            alt="Home Image"
+            class="home-image"
+          >
+          <div class="home-details">
+            <h2 class="home-title"> <%= shop.name %></h2>
+            <p class="home-location"> <%= shop.address %></p>
+            <p class="home-url"> <%= shop.url %></p>
+            <p class="home-rating"> <%=  shop.rating %>/10</p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
