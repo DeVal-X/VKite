@@ -10,13 +10,9 @@
     <div class="card-box">
       <% @shops.each do |shop| %>
         <div class="home-card">
-          <img
-            src="https://source.unsplash.com/random?/kitesurf"
-            alt="Home Image"
-            class="home-image"
-          >
+          <%= link_to image_tag("https://source.unsplash.com/random?/kitesurf", alt: "shop's image", class: "home-image"),  gear_path(shop) %>
           <div class="home-details">
-            <h2 class="home-title"> <%= shop.name %></h2>
+            <h2 class="home-title"> <%= link_to shop.name, gear_path(shop)  %></h2>
             <p class="home-location"> <%= shop.address %></p>
             <p class="home-url"> <%= shop.url %></p>
             <p class="home-rating"> <%=  shop.rating %>/10</p>

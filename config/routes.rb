@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   get "/learn", to: "pages#learn"
   get "/about", to: "pages#about"
 
-  get "shops", to: "shops#index", as: :gear
+  # get "shops", to: "shops#index"
+  resources :shops, as: :gear
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
